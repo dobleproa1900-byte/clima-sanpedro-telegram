@@ -2,9 +2,9 @@ name: Despacho Diario de Clima
 
 on:
   schedule:
-    # Corre todos los días a las 07:00 AM (Hora Argentina / UTC-3 -> 10:00 UTC)
-    - cron: '0 10 * * *'
-  workflow_dispatch: # Permite dispararlo manualmente desde GitHub
+    # Corre todos los días a las 06:00 AM (Hora Argentina UTC-3 -> 09:00 UTC)
+    - cron: '0 9 * * *'
+  workflow_dispatch:
 
 jobs:
   ejecutar-bot:
