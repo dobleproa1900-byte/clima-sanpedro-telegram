@@ -24,6 +24,7 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID_GERARDO: ${{ secrets.TELEGRAM_CHAT_ID_GERARDO }}
+          TELEGRAM_CHAT_ID_VALERIA: ${{ secrets.TELEGRAM_CHAT_ID_VALERIA }}
         run: python main.py
